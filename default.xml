@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default remote="prakash56755" revision="default"/>
+
+  <!-- You can have as many remote repositories as you like -->
+  <remote name="mender" fetch="https://github.com/mendersoftware" />
+  <remote name="oe" fetch="https://git.openembedded.org" />
+  <remote name="imyller" fetch="https://github.com/imyller" />
+  <remote name="intel-iot-devkit" fetch="https://github.com/intel-iot-devkit" />
+  <remote name="prakash56755" fetch="https://github.com/prakash56755" />
+  <remote name="agherzan" fetch="https://github.com/agherzan" />
+  <!-- List all the repositories you want to fetch -->
+  <!-- "name": git repository's name on hosting server
+       "remote": the remote host from above (if not the default)
+       "revision": commitish to checkout (if not the default)
+       "path": directory where git repository gets cloned/synced -->
+
+
+ 
+  <project name="meta-openembedded" revision="refs/heads/rocko"  remote="oe" path="poky/meta-openembedded" />
+  <project name="meta-mender" revision="refs/heads/rocko"  remote="mender" path="poky/meta-mender" />
+  <project name="meta-nodejs" revision="refs/heads/master" remote="imyller" path="poky/meta-nodejs" />
+  <project name="meta-iot-cloud" revision="refs/heads/rocko" remote="intel-iot-devkit" path="poky/meta-iot-cloud" />
+  <project name="meta-himinds" revision="refs/heads/rocko" remote="prakash56755" path="poky/meta-himinds" />
+  <project name="build-script" revision="refs/heads/master" remote="prakash56755" path="poky/" />
+  <project name="meta-raspberrypi" revision="refs/heads/rocko" remote="agherzan" path="poky/meta-raspberrypi" /> 
+
+</manifest>
+
